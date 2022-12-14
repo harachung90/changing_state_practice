@@ -5,10 +5,20 @@ function App() {
 
   const [counter, setCounter] = React.useState(0)
   function handlePlus() {
+    // also can be setCounter(prevState => prevState + 1)
+    // or can be a function such as
+    // setCount(function(oldValue) {
+    // return oldValue + 1
+    // })
   setCounter(counter + 1);
   }
 
   function handleMinus() {
+    // also can be setCounter(prevState => prevState - 1)
+    // or can be a function such as
+    // setCount(function(oldValue) {
+    // return oldValue - 1
+    // })
     setCounter(counter - 1);
   }
 
