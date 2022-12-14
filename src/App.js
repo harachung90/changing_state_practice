@@ -3,13 +3,13 @@ import './App.css';
 
 function App() {
 
-  let [counter, setCounter] = React.useState(0)
+  const [counter, setCounter] = React.useState(0)
   function handlePlus() {
-  setCounter(prevState => prevState + 1);
+  setCounter(counter + 1);
   }
 
   function handleMinus() {
-    setCounter(prevState => prevState - 1);
+    setCounter(counter - 1);
   }
 
   return (
